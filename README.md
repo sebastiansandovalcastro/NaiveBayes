@@ -49,7 +49,7 @@ Tijuana, Baja California, al 07 de diciembre de 2020.
 
 ## 💥 Introducción
 
-_El presente documento está diseñado especialmente para mostrar el desarrollo del tema **Naive Bayes **, abarcando desde conceptos generales y ecuaciones necesarias hasta una implementación práctica en una situación real y su aplicación mediante codigo **scala**. Finalmente se incluyen algunas ventajas y desventajas al momento de implementar el algoritmo, así como una conclusión general basada en el análisis resultante a lo largo del desarrollo del documento._
+_El presente documento está diseñado especialmente para mostrar el desarrollo del tema **Naive Bayes**, abarcando desde conceptos generales y ecuaciones necesarias hasta una implementación práctica en una situación real y su aplicación mediante codigo **scala**. Finalmente se incluyen algunas ventajas y desventajas al momento de implementar el algoritmo, así como una conclusión general basada en el análisis resultante a lo largo del desarrollo del documento._
 
 ## 📕 Definiciones
 
