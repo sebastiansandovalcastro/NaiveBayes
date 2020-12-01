@@ -150,42 +150,83 @@ _Presentaremos los conceptos principales del algoritmo Naive Bayes estudiando el
 
 ### 🔢 Sample libsvm data
 
-	//Importaciones necesarias.
-	import org.apache.spark.ml.classification.NaiveBayes
-	import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+```scala
+//Importaciones necesarias.
+import org.apache.spark.ml.classification.NaiveBayes
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+```
 
 ![1.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/1.png)
 
-	// Cargar los datos guardados en formato LIBSVM como un DataFrame.
-	val data = spark.read.format("libsvm").load("C:/Users/Sebas/Desktop/sample_libsvm_data.txt")
-	data.show(2)
+```scala
+// Cargar los datos guardados en formato LIBSVM como un DataFrame.
+val data = spark.read.format("libsvm").load("C:/Users/Sebas/Desktop/sample_libsvm_data.txt")
+data.show(2)
+```
 
 ![2.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/2.png)
 
-	//Separar los datos en sets de entrenamiento y de prueba (30% reservado para pruebas)
-	val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3), seed = 1234L)
+```scala
+//Separar los datos en sets de entrenamiento y de prueba (30% reservado para pruebas)
+val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3), seed = 1234L)
+```
 
 ![3.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/3.png)
 
-	// Entrenar un modelo Naive Bayes.
-	val model = new NaiveBayes().fit(trainingData)
+```scala
+// Entrenar un modelo Naive Bayes.
+val model = new NaiveBayes().fit(trainingData)
+```
 
 ![4.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/4.png)
 
-	// Seleccionar las filas de ejemplo a mostrar.
-	val predictions = model.transform(testData)
-	predictions.show()
+```scala
+// Seleccionar las filas de ejemplo a mostrar.
+val predictions = model.transform(testData)
+predictions.show()
+```
 
 ![5.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/5.png)
 
-	// Selecciona (prediccion, etiqueta de cierto) y calcular errores de prueba
-	val evaluator = new MulticlassClassificationEvaluator().setLabelCol("label").setPredictionCol("prediction").setMetricName("accuracy")
+```scala
+// Selecciona (prediccion, etiqueta de cierto) y calcular errores de prueba
+val evaluator = new MulticlassClassificationEvaluator().setLabelCol("label").setPredictionCol("prediction").setMetricName("accuracy")
 
-	val accuracy = evaluator.evaluate(predictions)
+val accuracy = evaluator.evaluate(predictions)
 
-	println(s"Test set accuracy = $accuracy")
+println(s"Test set accuracy = $accuracy")
+```
 
 ![6.png](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/imagenes/6.png)
+
+### 📂 Código completo
+
+```scala
+//Importaciones necesarias.
+import org.apache.spark.ml.classification.NaiveBayes
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+
+// Cargar los datos guardados en formato LIBSVM como un DataFrame.
+val data = spark.read.format("libsvm").load("C:/Users/Sebas/Desktop/sample_libsvm_data.txt")
+data.show(2)
+
+//Separar los datos en sets de entrenamiento y de prueba (30% reservado para pruebas)
+val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3), seed = 1234L)
+
+// Entrenar un modelo Naive Bayes.
+val model = new NaiveBayes().fit(trainingData)
+
+// Seleccionar las filas de ejemplo a mostrar.
+val predictions = model.transform(testData)
+predictions.show()
+
+// Selecciona (prediccion, etiqueta de cierto) y calcular errores de prueba
+val evaluator = new MulticlassClassificationEvaluator().setLabelCol("label").setPredictionCol("prediction").setMetricName("accuracy")
+
+val accuracy = evaluator.evaluate(predictions)
+
+println(s"Test set accuracy = $accuracy")
+```
 
 Hacer click [aquí](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/scala/Exposicion.scala) para una mejor visualización del código scala.
 
