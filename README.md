@@ -233,7 +233,9 @@ Hacer click [aquí](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/ma
 ## 🖧 Sus posibles aplicaciones son:
 - Mineria de Datos
 - Deteccion de spam en correos
-- Deteccion de instucion en redes
+- Clasificacion de documentos
+- Deteccion de intrusiones en redes
+- Realizar predicciones en tiempo real
 
 ## 🎭 Ventajas y Desventajas
 
