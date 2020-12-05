@@ -232,12 +232,13 @@ println(s"Test set accuracy = $accuracy")
 
 Hacer click [aquí](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/main/scala/Exposicion.scala) para una mejor visualización del código scala.
 
-## 🖧 Sus posibles aplicaciones son:
-- Mineria de Datos
-- Deteccion de spam en correos
-- Clasificacion de documentos
-- Deteccion de intrusiones en redes
-- Realizar predicciones en tiempo real
+## 🖧 Posibles aplicaciones
+
+- Minería de Datos.
+- Detección de spam en correos.
+- Clasificación de documentos.
+- Detección de intrusiones en redes.
+- Predicciones en tiempo real.
 
 ## 🎭 Ventajas y Desventajas
 
