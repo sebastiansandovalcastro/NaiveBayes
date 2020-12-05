@@ -53,9 +53,9 @@ _El presente documento está diseñado especialmente para mostrar el desarrollo 
 
 ## 📕 Definiciones
 
-📋 _**Algoritmo:** es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema, realizar un cómputo, procesar datos y llevar a cabo otras tareas o actividades._ [[1]](https://es.wikipedia.org/wiki/Algoritmo)
+📋 _**Algoritmo:** Es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema, realizar un cómputo, procesar datos y llevar a cabo otras tareas o actividades._ [[1]](https://es.wikipedia.org/wiki/Algoritmo)
 
-👾 _**Machine Learning:** es una disciplina científica del ámbito de la Inteligencia Artificial que crea sistemas que aprenden automáticamente. Aprender en este contexto quiere decir identificar patrones complejos en millones de datos. La máquina que realmente aprende es un algoritmo que revisa los datos y es capaz de predecir comportamientos futuros. Automáticamente, también en este contexto, implica que estos sistemas se mejoran de forma autónoma con el tiempo, sin intervención humana._ [[2]](https://cleverdata.io/que-es-machine-learning-big-data/)
+👾 _**Machine Learning:** Es una disciplina científica del ámbito de la Inteligencia Artificial que crea sistemas que aprenden automáticamente. Aprender en este contexto quiere decir identificar patrones complejos en millones de datos. La máquina que realmente aprende es un algoritmo que revisa los datos y es capaz de predecir comportamientos futuros. Automáticamente, también en este contexto, implica que estos sistemas se mejoran de forma autónoma con el tiempo, sin intervención humana._ [[2]](https://cleverdata.io/que-es-machine-learning-big-data/)
 
 ## 📖 Teoría
 
@@ -67,15 +67,17 @@ _**Naive Bayes**_ es una clase especial de algoritmo de clasificación de _**Mac
 
 Primeramente, _**Naive Bayes**_ se traduce literalmente como _**Bayes Ingenuo**_, lo que provoca cuestionarse: ¿por qué ingenuo?
 
-En este algoritmo se asume que las variables predictoras son independientes entre sí, lo que quiere decir que la presencia de una cierta característica en un conjunto de datos no está en absoluto relacionada con la presencia de cualquier otra característica.
+En este algoritmo se asume que las variables predictoras son independientes entre sí, lo que quiere decir que la presencia de una cierta característica en un conjunto de datos no está en absoluto relacionada con la presencia de cualquier otra característica que se puediese tener.
 
-En otras palabras, este tipo de algoritmo trata a sus variables de forma separada, ignorando por completo toda regla de relación que pueda llegar a existir como, por ejemplo, cierto orden lógico, cierta estructura, alguna característica en especial, etc.
+En otras palabras, este tipo de algoritmo trata a sus variables de forma separada, ignorando por completo toda regla de relación que pueda llegar a existir entre variables, por ejemplo, cierto orden lógico, cierta estructura, alguna característica en especial, etc. En resumen, cada variable es independiente.
 
 ### ❓ - ¿Para qué se utiliza el algoritmo Naive Bayes?
 
 El algoritmo _**Naive Bayes**_ se utiliza para construir modelos con comportamientos muy buenos. Se hace de una forma más fácil debido a la simplicidad del mismo.
 
 El algoritmo consigue hacer esto ya que proporciona una forma de calcular la probabilidad _**posterior**_ de que ocurra un cierto evento _**A**_, dadas algunas probabilidades de eventos _**anteriores**_.
+
+Naive Bayes es fácil de construir y particularmente útil para conjuntos de datos muy grandes.
 
 ## 📋 Algoritmo
 
