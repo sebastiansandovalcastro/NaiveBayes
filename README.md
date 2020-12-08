@@ -240,6 +240,11 @@ Hacer click [aquí](https://raw.github.com/sebastiansandovalcastro/NaiveBayes/ma
 - Detección de intrusiones en redes.
 - Predicciones en tiempo real.
 
+## 🎯 GaussianNB
+
+![GayssianNB.png](https://github.com/sebastiansandovalcastro/NaiveBayes/blob/main/imagenes/GaussianNB.png?raw=true)
+
+
 ## 🎭 Ventajas y Desventajas
 
 ### 👍 Ventajas
